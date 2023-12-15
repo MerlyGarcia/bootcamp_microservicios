@@ -1,0 +1,16 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: config-server-demo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MerlyGarcia/bootcamp_microservicios.git
+          username: MerlyGarcia
+          password: MerlyFabiola1823
+          default-label: main
+  profiles:
+    active: git
+    
